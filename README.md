@@ -1,12 +1,12 @@
 # AI-EMOTION-DETECTION
 
-Emotion Classification Using SVM
+#Emotion Classification Using SVM
 
-Overview
+#Overview
 
 This project implements an emotion classification system using a Support Vector Machine (SVM) model. The dataset consists of tweets labeled with emotions such as happiness, sadness, surprise, and anger. The main objective is to preprocess the text data and train an SVM model to classify tweets based on their emotional content.
 
-Dataset
+#Dataset
 
 The dataset used in this project is text_emotion.csv, which contains the following columns:
 
@@ -18,7 +18,7 @@ author: The author of the tweet (removed during preprocessing)
 
 content: The tweet text (input feature)
 
-Preprocessing Steps
+#Preprocessing Steps
 
 Dropped unnecessary columns (tweet_id and author).
 
@@ -36,23 +36,23 @@ Removed extra tabs and spaces.
 
 Trimmed blank spaces at the beginning and end of the text.
 
-Data Splitting
+#Data Splitting
 
 The dataset is split into training (70%) and testing (30%) sets using train_test_split from sklearn.model_selection.
 
-Feature Extraction
+#Feature Extraction
 
 The text data is transformed into a numerical representation using vectorization (vect.transform).
 
 The transformed data is stored as a sparse matrix.
 
-Model Training
+#Model Training
 
 The model is trained using a Support Vector Machine (SVM) classifier (SVC) with an RBF kernel.
 
 The random_state is set to 1 for reproducibility.
 
-Model Evaluation
+#Model Evaluation
 
 Predictions are made on the test set.
 
@@ -60,7 +60,7 @@ The accuracy score is calculated using metrics.accuracy_score.
 
 The achieved accuracy is 63.49%.
 
-Dependencies
+#Dependencies
 
 pandas
 
@@ -76,7 +76,7 @@ Run the script to preprocess data, train the model, and evaluate performance.
 
 Modify the model parameters or preprocessing steps for further improvements.
 
-Future Enhancements
+#Future Enhancements
 
 Experiment with different feature extraction techniques (TF-IDF, word embeddings, etc.).
 
